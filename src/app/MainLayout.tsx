@@ -2,12 +2,12 @@ import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { Sidebar } from "./Sidebar";
 import { NavBar } from "./NavBar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const MainLayout: React.FC = () => {
 
     const [menuShow , setMenushow] = useState(false);
-    const [isMobView, setIsMobView] = useState(window.innerWidth < 786);
+    const isMobView = window.innerWidth < 786;
 
 
     return (
@@ -32,7 +32,7 @@ export const MainLayout: React.FC = () => {
                     <Sidebar />
                 </div>
                 
-                <div className="flex-grow h-full" onClick={() => setMenushow(false)}>
+                <div className="grow h-full" onClick={() => setMenushow(false)}>
                     <Outlet />
                 </div>
             </section>

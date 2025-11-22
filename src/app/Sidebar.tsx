@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../store";
 import { setCreateTypoe, setFileRenameTrue, setTemDataArrObj, setTemFile } from "../store/FileOperationsDataSlice";
 import { FilesDirectoryArrObj, openFilesArr } from "../lib/utils/DataFile";
-import { DirectoryFoldersCompo } from "./directoryFoldersCompo";
+import { DirectoryFoldersCompo } from "./DirectoryFoldersCompo";
 import { toast } from "react-toastify";
 import type { filesProps, selectedFolderProps } from "../lib/utils/datatype/fileDataTypes";
 

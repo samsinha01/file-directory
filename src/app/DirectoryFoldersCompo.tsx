@@ -53,7 +53,7 @@ export const DirectoryFoldersCompo: React.FC = () => {
 
                             {proSelectedFolder?.folderId === data.folderId && (
                                 <div className="flex flex-col">
-                                    {data.files.map((item, id) =>
+                                    {data.files.map((item) =>
                                         <>
                                             <div
                                                 key={item.fileId}
